@@ -33,7 +33,7 @@ dependencies:
 ```
 
 ### 2. Try the example
-Check out the example file to see the full implementation and usage in action.
+Check out the [example file](https://github.com/MarsadMaqsood/snippets-by-marsad/blob/master/example/lib/touch_effect_screen.dart) to see the full implementation and usage in action.
 
 ## 💡 Ideas for Expansion
 
