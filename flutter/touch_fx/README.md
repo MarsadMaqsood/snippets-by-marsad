@@ -7,7 +7,7 @@ When users drag their fingers across the screen, glowing animated triangles appe
 
 ## 📱 Demo
 
-![Preview](preview.gif)  
+<img src="https://raw.githubusercontent.com/MarsadMaqsood/snippets-by-marsad/master/flutter/touch_fx/showcase/preview.gif" width="300" height="620">
 
 ---
 
