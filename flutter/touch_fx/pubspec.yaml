@@ -1,7 +1,7 @@
 name: touch_fx
-description: "A Flutter package that adds dynamic touch-based particle effects — inspired by interactive visuals seen in games and creative apps."
-version: 0.0.1
-homepage: https://github.com/MarsadMaqsood/snippets-by-marsad
+description: "A Flutter package that adds dynamic touch-based particle effects inspired by interactive visuals seen in games and creative apps."
+version: 1.0.0
+homepage: https://github.com/MarsadMaqsood/snippets-by-marsad/tree/master/flutter/touch_fx
 
 environment:
   sdk: ^3.8.1
@@ -16,5 +16,9 @@ dev_dependencies:
     sdk: flutter
   flutter_lints: ^5.0.0
 
-
-flutter:
+topics:
+  - ui
+  - widget
+  - touch-fx
+  - touch-effects
+  - effects
