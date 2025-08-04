@@ -9,6 +9,9 @@ When users drag their fingers across the screen, glowing animated triangles appe
 
 <img src="https://raw.githubusercontent.com/MarsadMaqsood/snippets-by-marsad/master/flutter/touch_fx/showcase/preview.gif" width="300" height="620">
 
+<img src="https://raw.githubusercontent.com/MarsadMaqsood/snippets-by-marsad/master/flutter/touch_fx/showcase/circle_preview.gif" width="300" height="620">
+
+
 ---
 
 ## 🚀 Features
@@ -24,25 +27,25 @@ When users drag their fingers across the screen, glowing animated triangles appe
 
 ### 1. Add dependency
 
-If you're using this snippet inside a unified example app, link it via `path`:
-
 ```yaml
 dependencies:
-  touch_fx:
-    path: ../flutter/touch_fx/
+  touch_fx: 1.0.0
 ```
 
-Or, use it directly from GitHub:
+### 2. Example
 
-```yaml
-touch_fx:
-    git:
-      url: https://github.com/MarsadMaqsood/snippets-by-marsad.git
-      path: flutter/touch_fx
+```dart
+
+TouchEffectLayer(
+  config: TouchEffectConfig(
+    shape: TouchShape.triangle,
+    maxParticles: 30,
+    size: 20,
+  ),
+),
 
 ```
 
-### 2. Try the example
 Check out the [example file](https://github.com/MarsadMaqsood/snippets-by-marsad/blob/master/example/lib/touch_effect_screen.dart) to see the full implementation and usage in action.
 
 ## 💡 Ideas for Expansion
@@ -57,4 +60,13 @@ Star the repo and follow me for more cool Flutter effects:
 [snippets-by-marsad](https://github.com/MarsadMaqsood/snippets-by-marsad)
 
 ## 📄 License
-MIT – free to use, modify, and share.
+This project is licensed under the MIT License.
+Feel free to use, modify, and distribute it as needed.
+
+## 🙌 Contributions
+
+Contributions and pull requests are welcome!
+We value your input and appreciate any improvements or suggestions you can provide. Feel free to submit a pull request with your changes.
+
+If you find this package useful, please consider starring the repository it helps others discover it too.
+Thank you for your support and collaboration!
