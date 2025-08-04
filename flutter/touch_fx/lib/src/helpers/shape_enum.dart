@@ -1,0 +1,1 @@
+enum TouchShape { triangle, circle }

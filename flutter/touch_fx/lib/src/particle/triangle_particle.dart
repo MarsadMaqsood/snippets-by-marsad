@@ -1,27 +1,28 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:touch_fx/src/particle/particle.dart';
 
-class GlowingTriangle {
-  Offset position;
-  double size;
-  double opacity;
+class TriangleParticle extends Particle {
+  /// The rotation angle of the particle in radians.
+  ///
+  /// This can be used to apply rotation effects when displaying.
   double rotation;
-  double velocityX;
-  double velocityY;
+
+  /// The color used to display the particle.
   Color color;
-  final DateTime creationTime;
 
-  GlowingTriangle({
-    required this.position,
-    required this.size,
-    required this.opacity,
+  TriangleParticle({
+    required super.position,
+    required super.size,
+    required super.opacity,
     required this.rotation,
-    required this.velocityX,
-    required this.velocityY,
+    required super.velocityX,
+    required super.velocityY,
     required this.color,
-  }) : creationTime = DateTime.now();
+  });
 
+  @override
   void update() {
     const lifetimeMilliseconds = 1000;
     final timeSinceCreation = DateTime.now().difference(creationTime);
@@ -39,6 +40,7 @@ class GlowingTriangle {
     }
   }
 
+  @override
   void paint(Canvas canvas) {
     if (opacity <= 0) return;
 
@@ -65,7 +67,6 @@ class GlowingTriangle {
       // A thinner, sharper stroke for the core
       ..strokeWidth = size / 8;
 
-    // Draw the layers in order: outer glow first, then inner glow on top
     canvas.drawPath(path, outerGlowPaint);
     canvas.drawPath(path, innerGlowPaint);
   }
